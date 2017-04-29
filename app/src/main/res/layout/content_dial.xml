@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececf3fa">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="130dp">
+
+        <EditText
+            android:layout_width="297dp" android:id="@+id/phone_number"
+            android:layout_marginTop="20dip" android:layout_marginBottom="10dip"
+            android:maxLines="1"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:textSize="30sp"
+            android:freezesText="true"
+            android:focusableInTouchMode="true"
+            android:editable="true"
+            android:cursorVisible="true"
+            android:textColorLink="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:layout_height="40dp"
+            android:textColor="#ffffff">
+        </EditText>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:id="@+id/deleteButton"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="4dp"
+            android:background="@android:drawable/ic_input_delete"
+            app:srcCompat="@android:drawable/ic_input_delete"
+            app:elevation="25dp"
+            app:rippleColor="#2b3d45" />
+    </LinearLayout>
+
+    <Button
+        android:text="2"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/one"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/two"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="3"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/two"
+        android:layout_toRightOf="@+id/two"
+        android:layout_toEndOf="@+id/two"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/three"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="4"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_below="@+id/one"
+        android:layout_alignLeft="@+id/one"
+        android:layout_alignStart="@+id/one"
+        android:layout_marginTop="13dp"
+        android:id="@+id/four"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="5"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/four"
+        android:layout_alignLeft="@+id/two"
+        android:layout_alignStart="@+id/two"
+        android:id="@+id/five"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="6"
+
+        android:layout_height="63dp"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/five"
+        android:layout_alignLeft="@+id/three"
+        android:layout_alignStart="@+id/three"
+        android:id="@+id/six"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="7"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_below="@+id/four"
+        android:layout_alignLeft="@+id/four"
+        android:layout_alignStart="@+id/four"
+        android:layout_marginTop="13dp"
+        android:id="@+id/seven"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="8"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/seven"
+        android:layout_alignLeft="@+id/five"
+        android:layout_alignStart="@+id/five"
+        android:id="@+id/eight"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="9"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/eight"
+        android:layout_alignLeft="@+id/six"
+        android:layout_alignStart="@+id/six"
+        android:id="@+id/nine"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="*"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_below="@+id/seven"
+        android:layout_alignLeft="@+id/seven"
+        android:layout_alignStart="@+id/seven"
+        android:layout_marginTop="14dp"
+        android:id="@+id/asterisk"
+        android:layout_width="65dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="0"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/asterisk"
+        android:layout_alignLeft="@+id/eight"
+        android:layout_alignStart="@+id/eight"
+        android:id="@+id/zero"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="#"
+        android:layout_width="65dp"
+        android:background="@drawable/shape"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/zero"
+        android:layout_alignLeft="@+id/nine"
+        android:layout_alignStart="@+id/nine"
+        android:id="@+id/hash"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="1"
+        android:background="@drawable/shape"
+        android:layout_marginTop="208dp"
+        android:id="@+id/one"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/two"
+        android:layout_toStartOf="@+id/two"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        android:layout_marginTop="26dp"
+        android:id="@+id/dialButton"
+        android:layout_below="@+id/zero"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#0da408"
+        app:rippleColor="#0b3307"
+        app:elevation="23dp" />
+
+
+</RelativeLayout>
